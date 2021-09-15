@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Blur Mask Image</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div id="blur-area">
+   </div>
+   <nav>
+       <img src="logo.png" class="logo">
+       <ul>
+           <li><a href="">HOME</a></li>
+           <li><a href="">ABOUT US</a></li>
+           <li><a href="">SERVICES</a></li>
+           <li><a href="">CONTACT US</a></li>
+        </ul>
+   </nav>
+   <div class="text-box">
+       <h1>To Create a Website</h1>
+       <button type="button">EXPLORE MODE</button>
+   </div>
+</div>
+<script>
+    var BLURAREA = document.getElementById("blur-area");
+    document.onmousemove=function(e){
+        BLURAREA.style.transform= `translate(${e.pageX}px, ${e.pageY}px)`;
+    }
+</script>
+
+
+
+</body>
+</html>
